@@ -1,0 +1,17 @@
+package: nirodents-0.1.0+77.g7f116c9.dirty
+sections:
+- name: Anatomical
+  ordering: subject,session,task,acquisition,ceagent,reconstruction,direction,run
+  reportlets:
+  - bids: {datatype: figures, desc: brain, suffix: mask}
+    caption: This panel shows the template T1-weighted image (if several T1w images
+      were found), with contours delineating the detected brain mask and brain tissue
+      segmentations.
+    subtitle: Final brain mask
+    static: false
+  - bids: {datatype: figures, desc: init, suffix: mask}
+    caption: This panel shows the template T1-weighted image (if several T1w images
+      were found), with contours delineating the detected brain mask and brain tissue
+      segmentations.
+    subtitle: Initialization with <code>antsAI</code>
+    static: false
