@@ -8,8 +8,8 @@ def get_parser():
     from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
     
     parser = ArgumentParser(
-        prog="generate_group_report",
-        description="""generate_group_report -- Create group report based on individual reportlets.""",
+        prog="nr-reports",
+        description="""nr-reports -- Create group report based on individual reportlets.""",
         formatter_class=ArgumentDefaultsHelpFormatter,
     )
 
@@ -46,5 +46,5 @@ if __name__ == "__main__":
     raise RuntimeError(
         """\
 nirodents/cli/group_report.py should not be run directly;
-Please `pip install` nirodents and use the `generate_group_report` command."""
+Please `pip install` nirodents and use the `nr-reports` command."""
     )
